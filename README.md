@@ -26,7 +26,11 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+You can fix this 1 of 2 ways.
+1. I moved the script tag containing the js file to the bottom of the HTML file outside of the body, but before the closing html tag.
+2. You can wrap the js file in an addEventListener with DOMContentLoaded.
 
+Both of these load the HTML before the JS file, so when the JS is run the information is there for the header to be found with the proper HTML h1 info.
 ```
 
 ## Deliverable 2
@@ -35,7 +39,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+I thought I needed innerText called upon the header constant, but that brought me too deep into what I was trying to change. I want the text to change color, but in order to do that I have to change the style of the h1.
 ```
 
 ## Deliverable 3
@@ -57,7 +61,7 @@ Create a DOM element that looks like this for each player and append it to the `
 
 **YOUR NOTES**
 ```
-
+This one took awhile.  I decided on the for loop early on, but I tried to use the backtick "`" for everything, including the div, but it just put all the info in as a string obviously.  So, from our example from lecture today, I decided to create the div, add the class, then add the dataset of number.  From there it was very similar to the example today.
 ```
 
 ## Deliverable 4
@@ -68,5 +72,5 @@ Hint: You can use `querySelector` with [CSS Attribute Selectors](https://develop
 
 **YOUR NOTES**
 ```
-
+I used the documentation from the link above using *= to find all the elements with data-number equaling 7.
 ```
